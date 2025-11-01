@@ -42,7 +42,7 @@ export interface IStorage {
 export class MongoStorage implements IStorage {
   async getAllProducts(): Promise<ProductType[]> {
     await connectDB();
-    return await Product.find({}).lean() as ProductType[];
+    return await Product.find({}).lean() as unknown as ProductType[];
   }
 
   async getProductById(id: string): Promise<ProductType | null> {
@@ -52,7 +52,7 @@ export class MongoStorage implements IStorage {
 
   async getProductsByCategory(categoryId: string): Promise<ProductType[]> {
     await connectDB();
-    return await Product.find({ categoryId }).lean() as ProductType[];
+    return await Product.find({ categoryId }).lean() as unknown as ProductType[];
   }
 
   async createProduct(product: InsertProduct): Promise<ProductType> {
@@ -74,7 +74,7 @@ export class MongoStorage implements IStorage {
 
   async getAllCategories(): Promise<CategoryType[]> {
     await connectDB();
-    return await Category.find({}).lean() as CategoryType[];
+    return await Category.find({}).lean() as unknown as CategoryType[];
   }
 
   async getCategoryById(id: string): Promise<CategoryType | null> {
