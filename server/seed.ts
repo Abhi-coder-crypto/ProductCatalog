@@ -5,6 +5,7 @@ const CATEGORIES = [
     id: "drinks",
     name: "Drinks",
     description: "Our aloe vera drinks are the cornerstone of Forever Living. Harvested from our own aloe fields and processed within hours, these drinks deliver the pure inner leaf gel in its most potent form.",
+    image: "/images/drinks-category-bg.png",
   },
   {
     id: "bee",
