@@ -4,6 +4,8 @@ import { ChevronRight, Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useQuery } from "@tanstack/react-query";
+import type { ProductType } from "@shared/schema";
 
 //todo: remove mock functionality
 const PRODUCT_DATA: Record<string, any> = {
@@ -207,8 +209,25 @@ const PRODUCT_DATA: Record<string, any> = {
 
 export default function ProductDetailPage() {
   const [, params] = useRoute("/product/:id");
-  const productId = params?.id || "aloe-gel";
-  const product = PRODUCT_DATA[productId] || PRODUCT_DATA["aloe-gel"];
+  const productId = params?.id || "715";
+  
+  const { data, isLoading } = useQuery<ProductType>({
+    queryKey: ["/api/products", productId],
+  });
+
+  const fallbackProduct = PRODUCT_DATA[productId] || PRODUCT_DATA["715"];
+  const product = data || fallbackProduct;
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12">
+          <div className="text-center">Loading...</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -279,7 +298,7 @@ export default function ProductDetailPage() {
                 <Card>
                   <CardContent className="p-6">
                     <ul className="space-y-3">
-                      {product.features.map((feature: string, index: number) => (
+                      {product.features?.map((feature: string, index: number) => (
                         <li key={index} className="flex items-start gap-3" data-testid={`feature-${index}`}>
                           <div className="bg-primary/10 rounded-full p-1 mt-0.5">
                             <Check className="w-4 h-4 text-primary" />
@@ -296,7 +315,7 @@ export default function ProductDetailPage() {
                 <Card>
                   <CardContent className="p-6">
                     <ul className="space-y-3">
-                      {product.benefits.map((benefit: string, index: number) => (
+                      {product.benefits?.map((benefit: string, index: number) => (
                         <li key={index} className="flex items-start gap-3" data-testid={`benefit-${index}`}>
                           <div className="bg-primary/10 rounded-full p-1 mt-0.5">
                             <Check className="w-4 h-4 text-primary" />

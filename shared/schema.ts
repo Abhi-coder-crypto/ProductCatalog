@@ -1,18 +1,26 @@
-import { sql } from "drizzle-orm";
-import { pgTable, text, varchar } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  username: text("username").notNull().unique(),
-  password: text("password").notNull(),
+export const insertProductSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  shortDescription: z.string(),
+  image: z.string(),
+  category: z.string(),
+  categoryId: z.string(),
+  features: z.array(z.string()),
+  benefits: z.array(z.string()),
+  ingredients: z.string(),
+  usage: z.string(),
 });
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
+export const insertCategorySchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
 });
 
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
+export type InsertProduct = z.infer<typeof insertProductSchema>;
+export type InsertCategory = z.infer<typeof insertCategorySchema>;
+export type ProductType = InsertProduct & { _id?: string; createdAt?: Date; updatedAt?: Date };
+export type CategoryType = InsertCategory & { _id?: string; createdAt?: Date; updatedAt?: Date };

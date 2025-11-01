@@ -2,6 +2,8 @@ import { useRoute, Link } from "wouter";
 import Header from "@/components/Header";
 import ProductCard from "@/components/ProductCard";
 import { ChevronRight } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import type { ProductType, CategoryType } from "@shared/schema";
 
 //todo: remove mock functionality
 const CATEGORY_DATA: Record<string, any> = {
@@ -80,7 +82,29 @@ const CATEGORY_DATA: Record<string, any> = {
 export default function CategoryPage() {
   const [, params] = useRoute("/category/:id");
   const categoryId = params?.id || "drinks";
-  const category = CATEGORY_DATA[categoryId] || CATEGORY_DATA.drinks;
+  
+  const { data: category, isLoading: categoryLoading } = useQuery<CategoryType>({
+    queryKey: ["/api/categories", categoryId],
+  });
+
+  const { data: products = [], isLoading: productsLoading } = useQuery<ProductType[]>({
+    queryKey: ["/api/categories", categoryId, "products"],
+  });
+
+  const fallbackCategory = CATEGORY_DATA[categoryId] || CATEGORY_DATA.drinks;
+  const displayCategory = category || fallbackCategory;
+  const displayProducts = products.length > 0 ? products : fallbackCategory.products;
+
+  if (categoryLoading || productsLoading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-12">
+          <div className="text-center">Loading...</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -92,27 +116,27 @@ export default function CategoryPage() {
             Home
           </Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-foreground" data-testid="text-current-category">{category.name}</span>
+          <span className="text-foreground" data-testid="text-current-category">{displayCategory.name}</span>
         </div>
 
         <div className="mb-12">
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold mb-4" data-testid="text-category-title">
-            {category.name}
+            {displayCategory.name}
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl" data-testid="text-category-description">
-            {category.description}
+            {displayCategory.description}
           </p>
           <div className="mt-4 text-sm text-muted-foreground" data-testid="text-product-count">
-            {category.products.length} Products
+            {displayProducts.length} Products
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {category.products.map((product: any) => (
+          {displayProducts.map((product: any) => (
             <ProductCard
               key={product.id}
               {...product}
-              category={category.name}
+              category={displayCategory.name}
             />
           ))}
         </div>
