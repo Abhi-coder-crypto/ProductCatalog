@@ -10,7 +10,7 @@ const CATEGORIES = [
     id: "bee",
     name: "Bee Products",
     description: "Forever's bee products harness the natural power of the hive. Our bee pollen, royal jelly, and propolis are carefully collected and processed to preserve their natural benefits.",
-    image: "/images/bee-bg.png",
+    image: "/images/bee-category-bg.png",
   },
   {
     id: "nutritionals",

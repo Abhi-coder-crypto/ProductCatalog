@@ -8,6 +8,8 @@ This is a digital catalogue application for Forever Living Products, an e-commer
 
 Preferred communication style: Simple, everyday language.
 
+**Database Preference**: ALWAYS USE MONGODB - Do not migrate to PostgreSQL. The MONGODB_URI is configured in secrets.
+
 ## System Architecture
 
 ### Frontend Architecture
@@ -57,16 +59,11 @@ Preferred communication style: Simple, everyday language.
 ### Data Storage
 
 **Database Strategy**
-- **Current**: MongoDB with Mongoose ODM
+- **Database**: MongoDB with Mongoose ODM (DO NOT MIGRATE TO POSTGRESQL)
   - Product and Category schemas with timestamps
   - Unique ID constraints on both models
   - Lean queries for performance (returns plain JavaScript objects)
-
-- **Migration Path**: Drizzle ORM configuration present for PostgreSQL
-  - Schema definitions in `shared/schema.ts` using Zod validation
-  - Drizzle-kit configured for migrations
-  - Environment variable `DATABASE_URL` expected for connection
-  - Note: The application may transition from MongoDB to PostgreSQL using Drizzle
+  - Connection via MONGODB_URI environment variable
 
 **Data Validation**
 - Zod schemas for runtime validation (insertProductSchema, insertCategorySchema)
