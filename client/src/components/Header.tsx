@@ -33,9 +33,11 @@ export default function Header({ onSearch, initialSearchQuery = "", onSubmitSear
         <div className="flex items-center justify-between gap-4 h-16 md:h-20">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-2 cursor-pointer">
-              <div className="font-heading text-xl md:text-2xl font-bold text-primary">
-                FOREVER
-              </div>
+              <img 
+                src="/images/forever-logo.png" 
+                alt="Forever Living" 
+                className="h-8 md:h-10 w-auto object-contain"
+              />
               <div className="hidden sm:block text-sm text-muted-foreground">
                 Living Products
               </div>

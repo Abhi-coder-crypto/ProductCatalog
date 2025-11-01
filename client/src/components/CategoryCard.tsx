@@ -14,7 +14,7 @@ export default function CategoryCard({ id, name, description, productCount, imag
   return (
     <Link href={`/category/${id}`} data-testid={`link-category-${id}`}>
       <Card className="group relative overflow-hidden cursor-pointer hover-elevate active-elevate-2 transition-all duration-300 h-full border-amber-200 hover:border-primary hover:shadow-lg">
-        <div className="aspect-[4/3] relative">
+        <div className="aspect-[4/3] md:aspect-[4/3] min-h-[240px] md:min-h-0 relative">
           <img
             src={image}
             alt={name}
