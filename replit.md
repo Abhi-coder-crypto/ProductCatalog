@@ -2,7 +2,15 @@
 
 ## Overview
 
-This is a digital catalogue application for Forever Living Products, an e-commerce platform showcasing health and wellness products across multiple categories (Drinks, Bee Products, Nutritionals, Weight Management, Skincare, Personal Care, and Household items). The application provides a clean, modern interface for browsing products with detailed information including features, benefits, ingredients, and usage instructions.
+This is a digital catalogue application for Forever Living Products, an e-commerce platform showcasing health and wellness products across multiple categories (Drinks, Bee Products, Nutritionals, Weight Management, Skincare, Personal Care, and Household items). The application provides a clean, modern interface with a yellow-white brand theme for browsing products with detailed information including features, benefits, ingredients, and usage instructions.
+
+## Recent Updates (November 2025)
+
+- **Yellow-White Theme**: Implemented brand colors throughout the website with yellow (#FFB81C) as primary color
+- **Hero Banner**: Added Forever Living banner image to homepage
+- **Search Functionality**: Fully functional search on all pages supporting product names and product IDs/hashcodes (#XXX format)
+- **Mobile Responsive**: Optimized for all screen sizes with mobile-first design approach
+- **Enhanced UI**: Updated category cards, product cards, and product detail pages with improved styling and hover effects
 
 ## User Preferences
 
@@ -27,15 +35,25 @@ Preferred communication style: Simple, everyday language.
 **UI Component System**
 - Shadcn/ui component library (New York style variant) with Radix UI primitives
 - Tailwind CSS for utility-first styling with custom design tokens
-- Custom CSS variables for theming (light/dark mode support)
+- Custom CSS variables for theming (yellow-white brand theme implemented)
 - Typography system using Inter (body/UI) and Poppins (headings) from Google Fonts
 - Responsive breakpoints: mobile-first with md (768px) and lg breakpoints
 
 **Design Principles**
+- Yellow-white brand theme (#FFB81C primary yellow, white backgrounds)
 - Visual clarity through generous whitespace and structured grids
-- 2-4 column responsive product grids (mobile to desktop)
+- 1-4 column responsive product grids (mobile to desktop)
 - Hover and active state elevations for interactive elements
-- Custom border radius system (3px, 6px, 9px)
+- Gradient backgrounds (white to amber-50) for depth
+- Border accents in amber-200 for subtle visual separation
+
+**Search Functionality**
+- Global search in header (desktop and mobile)
+- Search by product name (partial matching)
+- Search by product ID (e.g., "715")
+- Search by hashcode (e.g., "#715")
+- Real-time filtering on category pages
+- Direct navigation to product when exact match found
 
 ### Backend Architecture
 
