@@ -770,7 +770,7 @@ const PRODUCTS = [
     name: "Forever Lite Ultra™ Chocolate",
     description: "Protein is the basic building block of every cell in your body. A high protein diet can play an important role in weight loss by helping you control cravings and build strong, lean muscle. To build and maintain muscle, your body needs amino acids that can only be derived from protein. Forever Lite Ultra™ is a delicious, versatile and easy way to feed your body 13 grams of vegetarian-sourced protein without sugar, fat or carbs. It's a nutritious shake with a decadent natural chocolate flavor that mixes with milk or your favorite non-dairy substitute. You'll love the way you feel when you make Forever Lite Ultra™ part of your weight management and exercise routine! Remember, you'll get the best results when you combine this delicious and powerful shake with healthy eating and regular exercise. Raise a glass. Here's to your successful weight management journey! Each serving of Forever Lite Ultra™, prepared with skim milk as directed, supplies vitamins, minerals and important amino acids, including essential, non-essential and the branched-chain amino acids. With Forever Lite Ultra™, you can rest assured that you're getting the nutrition you want without having to sacrifice taste.",
     shortDescription: "Rich chocolate power to power your healthy lifestyle",
-    image: "",
+    image: "/images/products/lite-ultra-chocolate.png",
     category: "Weight Management",
     categoryId: "weight-management",
     features: [
@@ -795,7 +795,7 @@ const PRODUCTS = [
     name: "Forever Lite Ultra™ Vanilla",
     description: "Protein is the basic building block of every cell in your body. A high protein diet can play an important role in weight loss by helping you control cravings and build strong, lean muscle. To build and maintain muscle, your body needs amino acids that can only be derived from protein. Forever Lite Ultra™ is a delicious, versatile and easy way to feed your body 13 grams of vegetarian-sourced protein without sugar, fat or carbs. It's a nutritious shake with a decadent natural vanilla flavor that mixes with milk or your favorite non-dairy substitute. You'll love the way you feel when you make Forever Lite Ultra™ part of your weight management and exercise routine! Remember, you'll get the best results when you combine this delicious and powerful shake with healthy eating and regular exercise. Raise a glass. Here's to your successful weight management journey! Each serving of Forever Lite Ultra™, prepared with skim milk as directed, supplies vitamins, minerals and important amino acids, including essential, non-essential and the branched-chain amino acids. With Forever Lite Ultra™, you can rest assured that you're getting the nutrition you want without having to sacrifice taste.",
     shortDescription: "Power your healthy lifestyle with protein and nutrition",
-    image: "",
+    image: "/images/products/lite-ultra-vanilla.png",
     category: "Weight Management",
     categoryId: "weight-management",
     features: [
@@ -820,7 +820,7 @@ const PRODUCTS = [
     name: "Forever Garcinia Plus™",
     description: "Forever Garcinia Plus™ is designed to complement your healthy lifestyle and help you achieve your weight management goals. The star of the show is the Garcinia cambogia fruit, which contains hydroxycitric acid (HCA). This compound has been shown to temporarily inhibit the body's conversion of carbohydrates into fats. The potent Garcinia extract used in Forever Garcinia Plus™ contains high levels of this important compound. Because Garcinia helps inhibit fat production, the body leans toward burning existing fat stores, which aids in weight loss when combined with a sensible diet and exercise program. This incredible fruit has also been shown to help reduce cravings as a natural appetite suppressant. Researchers in the 1960s discovered the Garcinia fruit had compounds that could impact metabolism by inhibiting the enzyme that converts calories into fat. Garcinia is also caffeine free, so you can take this supplement without those caffeine jitters! To complement Garcinia, we added chromium picolinate. If your body is deficient of this important mineral, it could cause fatigue and excess fat production. You work hard to eat right and exercise. Forever Garcinia Plus™ is a great tool to help you stay on track!",
     shortDescription: "Designed to help you get your best results",
-    image: "",
+    image: "/images/products/garcinia-plus.png",
     category: "Weight Management",
     categoryId: "weight-management",
     features: [
@@ -843,7 +843,7 @@ const PRODUCTS = [
     name: "Forever Plant Protein™",
     description: "Introducing Forever Plant Protein™, a premium choice for those committed to a plant-based lifestyle and seeking clean label products. Crafted with a blend of pea and pumpkin protein, this protein powder offers a holistic approach to supplementing your daily macronutrients. Each serving delivers a substantial 17 grams of protein along with fiber, promoting satiety and supporting muscle mass and healthy bones. What sets Forever Plant Protein apart is its use of pea protein isolate, which is the high bioavailability form that packs in all essential amino acids vital for bodily functions. This makes it an ideal choice for anyone looking to maintain or build muscle while adhering to a plant-based diet. The vanilla flavor is derived naturally from plants, ensuring a delicious taste without relying on artificial sweeteners. Additionally, its smooth, non-gritty texture sets it apart from other plant-based proteins, enhancing the overall drinking experience. Moreover, Forever Plant Protein is committed to sustainability, utilizing rare and sustainably sourced protein sources like pea and pumpkin seed protein. It's designed not just as a meal replacement, but as a complementary way to boost protein intake throughout the day. Whether you're blending it into smoothies, mixing it with water or plant-based milk, Forever Plant Protein offers a nutritious and satisfying solution for your protein needs.",
     shortDescription: "Vanilla flavoured pea and pumpkin protein",
-    image: "",
+    image: "/images/products/plant-protein.png",
     category: "Weight Management",
     categoryId: "weight-management",
     features: [
