@@ -54,7 +54,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-white to-amber-50/30">
       <Header onSearch={setSearchQuery} initialSearchQuery={searchQuery} onSubmitSearch={handleSearch} />
       
-      <div className="relative h-[50vh] overflow-hidden">
+      <div className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <img
           src="/images/hero-banner.png"
           alt="Forever Living - World's Best Aloe Vera Company"
