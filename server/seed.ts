@@ -1543,6 +1543,30 @@ const PRODUCTS = [
     ingredients: "Aloe Barbadensis Leaf Juice, (Stabilized Aloe Vera Gel) Water (Aqua/Eau), Propanediol, Sorbitol, 1,2- Hexanediol, Chlorella Vulgaris Extract, Sodium Hyaluronate, Glycerin, Cucumis Sativus (Cucumber) Fruit Extract, Camellia Sinensis Leaf Extract, Beta Glucan, Sodium Lactate, Phytic Acid, Allantoin, Potassium Sorbate",
     usage: "Apply a generous amount to face and neck after cleansing using a cotton ball or pad. Use twice daily to minimize the appearance of pores and hydrate skin. 4.4 FL. OZ. (130 mL)"
   },
+  {
+    id: "051",
+    name: "Aloe Propolis Creme",
+    description: "The best of aloe and the hive. Only Forever could create a product as inventive as Aloe Propolis Creme. This nourishing cream combines two of our most prized ingredients, pure inner leaf aloe vera gel and bee propolis. Together, these two fundamental elements help your skin maintain beautiful tone and texture. Bee propolis is a resinous substance that bees create to fortify their hives. Turns out it also has properties that create a natural barrier on your skin, locking in the natural skincare benefits of aloe. Aloe vera combined with vitamin A, E and C work to nourish and moisturize the skin while bee propolis helps rejuvenate skin's appearance for smoother, suppler look and feel. Aloe Propolis Creme also enhances the soothing power of aloe with the addition of chamomile. Of course, we use pure, inner leaf aloe vera gel from our own fields. The aloe is hand harvested and filleted to avoid damage and ensure only the highest quality aloe vera makes it into our products. It's easy to see why Aloe Propolis Creme is one of Forever's flagship products. Treat your skin to the soothing, nourishing and protecting power packed inside every bottle.",
+    shortDescription: "The best of aloe and the hive",
+    image: "",
+    category: "Skincare",
+    categoryId: "skincare",
+    features: [
+      "Rich blend of aloe vera and bee propolis",
+      "Helps maintain beautiful skin tone and texture",
+      "Nourishing and moisturizing",
+      "Helps soothe skin irritation",
+      "Suitable for vegetarians"
+    ],
+    benefits: [
+      "Maintains beautiful skin tone and texture",
+      "Creates natural moisture barrier",
+      "Nourishes with vitamins A, E and C",
+      "Soothes and protects skin"
+    ],
+    ingredients: "Aloe Barbadensis Leaf Juice (Stabilized* Aloe Vera Gel), Glyceryl Stearate, Propylene Glycol, Cetyl Alcohol, PEG-100 Stearate, Lanolin, Sorbitol, Ethylhexyl Palmitate, Ethylhexyl Stearate, Diethylene Glycol Diethyl Ether, Fragrance (Parfum), Lanolin Alcohol, Dimethicone, Tocopherol, Beta Carotene (Provitamin A), Zea Mays (Corn) Oil, Chamomilla Recutita (Matricaria) Flower Extract, Triethanolamine, Ascorbic Acid, Disodium EDTA, Diazolidinyl Urea, Methylparaben, Propylparaben, Fragrance (Parfum)",
+    usage: "Apply liberally as needed. 4 OZ. (113 g)"
+  },
 ];
 
 export async function seedDatabase() {
