@@ -23,6 +23,7 @@ const CATEGORIES = [
     id: "weight-management",
     name: "Weight Management",
     description: "Achieve your health and fitness goals with our science-backed weight management products designed to support healthy metabolism and energy.",
+    image: "/images/weight-management-category-bg.png",
   },
   {
     id: "skincare",
@@ -760,6 +761,103 @@ const PRODUCTS = [
     ],
     ingredients: "Seeds & Nuts (24%) [Sesame Seeds, Watermelon Seeds, Almonds (4%), Peanuts (4%), Pumpkin Seeds, Chia Seeds], Fructooligosaccharide, Sweetener (In-145) (inulin), Rice Crisp (15%), Crisp (8%) (Pea Flour, Rice Flour, Tapioca Starch, Salt Oat), Stabilizing Agent (INS 170(i)), Soy Nuggets, Instant Rolled Oats (5%), Edible Gum (Acacia, Xanthan), Refined Sunflower Oil, Stabilizer (INS 412), Acidity Regulator (INS 330), Natural Flavour (Black Currant), Edible Common Salt, Rosemary Extract, Emulsifier (INS 322(i)).",
     usage: "35g"
+  },
+  {
+    id: "471",
+    name: "Forever Lite Ultra™ Chocolate",
+    description: "Protein is the basic building block of every cell in your body. A high protein diet can play an important role in weight loss by helping you control cravings and build strong, lean muscle. To build and maintain muscle, your body needs amino acids that can only be derived from protein. Forever Lite Ultra™ is a delicious, versatile and easy way to feed your body 13 grams of vegetarian-sourced protein without sugar, fat or carbs. It's a nutritious shake with a decadent natural chocolate flavor that mixes with milk or your favorite non-dairy substitute. You'll love the way you feel when you make Forever Lite Ultra™ part of your weight management and exercise routine! Remember, you'll get the best results when you combine this delicious and powerful shake with healthy eating and regular exercise. Raise a glass. Here's to your successful weight management journey! Each serving of Forever Lite Ultra™, prepared with skim milk as directed, supplies vitamins, minerals and important amino acids, including essential, non-essential and the branched-chain amino acids. With Forever Lite Ultra™, you can rest assured that you're getting the nutrition you want without having to sacrifice taste.",
+    shortDescription: "Rich chocolate power to power your healthy lifestyle",
+    image: "",
+    category: "Weight Management",
+    categoryId: "weight-management",
+    features: [
+      "Contributes to lean muscle mass",
+      "13 grams of protein per serving",
+      "Great source of vitamins and nutrition",
+      "Complements low-carb lifestyle",
+      "Gluten Free",
+      "Suitable for vegetarians"
+    ],
+    benefits: [
+      "Supports lean muscle development",
+      "Helps control cravings",
+      "Provides essential amino acids",
+      "Delicious chocolate flavor"
+    ],
+    ingredients: "Soy Protein Isolate (55.3%), Maltodextrin, Sunflower Oil, Natural Flavours (Chocolate, Cocoa), Cocoa Powder, Fructooligosaccharides, Honey, Wheat Starch, High Fructose Corn Syrup, Safflower Oil, Minerals, Corn Starch, Stabilizer [INS 412, INS 414], Emulsifier [INS 322(i), INS 471, INS 481], Natural Flavour (Vanilla), Colour [INS 150d], Carrier [INS 1518], Sucralose, Antioxidant [INS 301], Coconut Oil. Contains Soy, Wheat and Nut.",
+    usage: "Blend or mix 1 level scoop with 300 mL of skim milk. (Use scoop provided.) For a special treat, mix with crushed ice or fruit. Shake well before each use. This product is intended for adults. Use daily, up to 2 times per day. A health supplement is not to be used as a substitute for a varied diet. Do not exceed the stated recommended daily usage. 400 g"
+  },
+  {
+    id: "470",
+    name: "Forever Lite Ultra™ Vanilla",
+    description: "Protein is the basic building block of every cell in your body. A high protein diet can play an important role in weight loss by helping you control cravings and build strong, lean muscle. To build and maintain muscle, your body needs amino acids that can only be derived from protein. Forever Lite Ultra™ is a delicious, versatile and easy way to feed your body 13 grams of vegetarian-sourced protein without sugar, fat or carbs. It's a nutritious shake with a decadent natural vanilla flavor that mixes with milk or your favorite non-dairy substitute. You'll love the way you feel when you make Forever Lite Ultra™ part of your weight management and exercise routine! Remember, you'll get the best results when you combine this delicious and powerful shake with healthy eating and regular exercise. Raise a glass. Here's to your successful weight management journey! Each serving of Forever Lite Ultra™, prepared with skim milk as directed, supplies vitamins, minerals and important amino acids, including essential, non-essential and the branched-chain amino acids. With Forever Lite Ultra™, you can rest assured that you're getting the nutrition you want without having to sacrifice taste.",
+    shortDescription: "Power your healthy lifestyle with protein and nutrition",
+    image: "",
+    category: "Weight Management",
+    categoryId: "weight-management",
+    features: [
+      "Contributes to lean muscle mass",
+      "13 grams of protein per serving",
+      "Great source of vitamins and nutrition",
+      "Complements low-carb lifestyle",
+      "Gluten Free",
+      "Suitable for vegetarians"
+    ],
+    benefits: [
+      "Supports lean muscle development",
+      "Helps control cravings",
+      "Provides essential amino acids",
+      "Smooth vanilla flavor"
+    ],
+    ingredients: "Soy Protein Isolate (57.5%), Maltodextrin, Sunflower Oil, Fructooligosaccharides, Honey, Wheat Starch, High Fructose Corn Syrup, Safflower Oil, Minerals, Stabilizer [INS 412, INS 414], Corn Starch, Anticaking Agent [INS 551, INS 470(i)], Emulsifier [INS 322(i), INS 471, INS 481], Natural Flavour (Vanilla), Artificial Flavouring Substance (Vanilla), Sweetener [INS 955, INS 421], Vitamins, Colour [INS 150d], Sucralose, Antioxidant [INS 301], Coconut Oil. Contains Soy, Wheat and Nut.",
+    usage: "Blend or mix 1 level scoop with 300 mL of skim milk. (Use scoop provided.) For a special treat, mix with crushed ice or fruit. Shake well before each use. This product is intended for adults. Use daily, up to 2 times per day. A health supplement is not to be used as a substitute for a varied diet. Do not exceed the stated recommended daily usage. 400 g"
+  },
+  {
+    id: "071",
+    name: "Forever Garcinia Plus™",
+    description: "Forever Garcinia Plus™ is designed to complement your healthy lifestyle and help you achieve your weight management goals. The star of the show is the Garcinia cambogia fruit, which contains hydroxycitric acid (HCA). This compound has been shown to temporarily inhibit the body's conversion of carbohydrates into fats. The potent Garcinia extract used in Forever Garcinia Plus™ contains high levels of this important compound. Because Garcinia helps inhibit fat production, the body leans toward burning existing fat stores, which aids in weight loss when combined with a sensible diet and exercise program. This incredible fruit has also been shown to help reduce cravings as a natural appetite suppressant. Researchers in the 1960s discovered the Garcinia fruit had compounds that could impact metabolism by inhibiting the enzyme that converts calories into fat. Garcinia is also caffeine free, so you can take this supplement without those caffeine jitters! To complement Garcinia, we added chromium picolinate. If your body is deficient of this important mineral, it could cause fatigue and excess fat production. You work hard to eat right and exercise. Forever Garcinia Plus™ is a great tool to help you stay on track!",
+    shortDescription: "Designed to help you get your best results",
+    image: "",
+    category: "Weight Management",
+    categoryId: "weight-management",
+    features: [
+      "Temporarily inhibits fat production and storage",
+      "Helps reduce cravings and suppress appetite",
+      "Useful weight management tool",
+      "Gluten Free"
+    ],
+    benefits: [
+      "Supports weight management goals",
+      "Helps reduce appetite",
+      "Supports healthy metabolism",
+      "Caffeine-free formula"
+    ],
+    ingredients: "Garcinia cambogia Fruit Rind Extract (33.7%) (Standardized to 50% Hydroxy Citric Acid), Vehicle [Safflower Oil], Ingredient of Capsule Shell [Gelatin], Purified Water, Humectant, [INS 422], Emulsifier [INS 322(i)], Corn Syrup, Colour [INS 150d], Chromium (III) Chloride, Contains Soy.",
+    usage: "One softgel three times daily, preferably 30-60 minutes before meals. 70 Softgels"
+  },
+  {
+    id: "656",
+    name: "Forever Plant Protein™",
+    description: "Introducing Forever Plant Protein™, a premium choice for those committed to a plant-based lifestyle and seeking clean label products. Crafted with a blend of pea and pumpkin protein, this protein powder offers a holistic approach to supplementing your daily macronutrients. Each serving delivers a substantial 17 grams of protein along with fiber, promoting satiety and supporting muscle mass and healthy bones. What sets Forever Plant Protein apart is its use of pea protein isolate, which is the high bioavailability form that packs in all essential amino acids vital for bodily functions. This makes it an ideal choice for anyone looking to maintain or build muscle while adhering to a plant-based diet. The vanilla flavor is derived naturally from plants, ensuring a delicious taste without relying on artificial sweeteners. Additionally, its smooth, non-gritty texture sets it apart from other plant-based proteins, enhancing the overall drinking experience. Moreover, Forever Plant Protein is committed to sustainability, utilizing rare and sustainably sourced protein sources like pea and pumpkin seed protein. It's designed not just as a meal replacement, but as a complementary way to boost protein intake throughout the day. Whether you're blending it into smoothies, mixing it with water or plant-based milk, Forever Plant Protein offers a nutritious and satisfying solution for your protein needs.",
+    shortDescription: "Vanilla flavoured pea and pumpkin protein",
+    image: "",
+    category: "Weight Management",
+    categoryId: "weight-management",
+    features: [
+      "Entirely plant-based",
+      "Designed for people looking for clean label products",
+      "17 grams of pea and pumpkin protein per serving",
+      "Uses pea protein, an isolate that is the most bioavailable form of plant protein",
+      "Gluten Free"
+    ],
+    benefits: [
+      "High-quality plant protein",
+      "Supports muscle development",
+      "Smooth, non-gritty texture",
+      "Sustainably sourced ingredients"
+    ],
+    ingredients: "Pea Protein Isolate (59.5%), Pumpkin Protein (5.56%), Maltodextrin, Stabilizer [INS 412, INS 414], Fructooligosaccharides, Medium Chain Triglycerides, Natural Flavour (Vanilla), Anti-caking Agent [INS 551, INS 341(iii)], Sweetener [INS 960], Apple Powder (0.11%), Sucralose, Colour [INS 150d], Sequestrant [INS 516]. Contains Nut.",
+    usage: "Blend or mix 1 level scoop with 240 mL of water or plant-based beverage and mix well. One serving (25g) per day. A health supplement is not to be used as a substitute for a varied diet. Do not exceed the stated recommended daily usage. 400g"
   },
 ];
 
