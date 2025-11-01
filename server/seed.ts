@@ -230,7 +230,7 @@ const PRODUCTS = [
     name: "Forever Bee Honey",
     description: "There's only one thing you'll find in a bottle of Forever Bee Honey and that's pure sweetness from mountain bees that take a little longer to make their honey and this a fine wine, the added time lends our honey a more rich and complex flavor that's smooth, dark and delicious. Honey is a natural sweetener that has long been revered for its healthy and nutritional properties. In the calm and peaceful countryside where we harvest our honey, bees gather sweet nectar from lavender and rosemary or groves of orange to harvest the sweet nectar from the blossoms. As a result, you'll experience some of those notes in Forever Bee Honey, alongside essence of sacred spice. The flavors are so layered and complex, you'll discover something new to love every time you taste it. Honeybees are incredibly productive. They produce three to four times more honey than is needed to feed the hive for winter. That's why humans have been able to harvest the nutrition of the hive for thousands of years without imperiling the amazing little bee colony.",
     shortDescription: "A bottle of love from honeybees to you!",
-    image: "",
+    image: "/images/products/bee-honey.png",
     category: "Bee Products",
     categoryId: "bee",
     features: [
@@ -254,7 +254,7 @@ const PRODUCTS = [
     name: "Forever Bee Pollen",
     description: "Forever Bee Pollen packs all the power of pure bee pollen and honey for a combination of nutrition and energy straight from the hive! As they fly from blossom-to-blossom, bees pollinate plants and fuel our ecosystem. Bees ensure they get the nutrition they need to survive, which includes pollen. Harness the benefits of natural energy and stamina with Forever Bee Pollen. Our bee pollen supplement is a Forever favorite for good reason. It's an all-natural source of energy and nutrition to help power through your day and keeps your body going all day naturally. Typically, bee pollen is consumed as bland tasting granules sprinkled on food or chewed. No! Forever Bee Pollen, We've packed all that nutrition into an easy to take tablet by mixing it with smooth and delicious honey! Our bee pollen supplement is a Forever favorite for good reason. It's an all-natural source of energy and nutrition to help power through your day",
     shortDescription: "A bottle of love from honeybees to you!",
-    image: "",
+    image: "/images/products/bee-pollen.png",
     category: "Bee Products",
     categoryId: "bee",
     features: [
@@ -278,7 +278,7 @@ const PRODUCTS = [
     name: "Forever Tulsi Van Honey",
     description: "Experience the purity of single Flora Tulsi Honey, a natural golden elixir crafted from the nectar of blooming basil flowers. Sourced from pristine fields, this honey embodies the rich aroma and wellness benefits of tulsi, making it a perfect addition to your daily routine. Combine the essence of sacred Van Tulsi with the sweetness of honey. Immerse your senses in the aromatic notes of this rare and revered herb, while enjoying the nourishing benefits of honey. Indulge in nature's sweetness while embracing a healthier lifestyle with Forever Tulsi Van Honey. Taste the essence of tulsi in every drop!",
     shortDescription: "A bottle of love from honeybees to you!",
-    image: "",
+    image: "/images/products/tulsi-van-honey.png",
     category: "Bee Products",
     categoryId: "bee",
     features: [
