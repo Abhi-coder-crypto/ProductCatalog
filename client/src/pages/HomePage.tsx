@@ -46,11 +46,11 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-white to-amber-50/30">
       <Header onSearch={setSearchQuery} initialSearchQuery={searchQuery} onSubmitSearch={handleSearch} />
       
-      <div className="relative h-[60vh] md:h-[70vh] overflow-hidden">
+      <div className="relative h-[50vh] overflow-hidden">
         <img
           src="/images/hero-banner.png"
           alt="Forever Living - World's Best Aloe Vera Company"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-[center_80%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
