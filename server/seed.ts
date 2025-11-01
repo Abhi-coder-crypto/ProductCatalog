@@ -41,6 +41,7 @@ const CATEGORIES = [
     id: "household",
     name: "Household",
     description: "Keep your home clean and fresh with our eco-friendly household products made with natural ingredients.",
+    image: "/images/household-category-bg.png",
   },
 ];
 
@@ -1917,6 +1918,59 @@ const PRODUCTS = [
     ],
     ingredients: "Alcohol Denat., Fragrance (Parfum), Water (Aqua)",
     usage: "Apply as desired. 1 FL. OZ. (30 mL)"
+  },
+  {
+    id: "040",
+    name: "Aloe First Spray",
+    description: "Fast-acting, easy-to-use power. Aloe First™ is a perfect addition to your first aid kit or medicine cabinet. This exclusive skin soothing formula is made using stabilized aloe vera gel from our farms. Aloe vera gel comes in a fast-absorbing spray. Aloe First™ also contains bee propolis and a proprietary blend of eleven powerful plant extracts. Of course, aloe vera is the primary and most powerful ingredient for a reason. For centuries, aloe vera has been used to help soothe minor burns and provide a sense of relief to irritated skin. We added bee propolis to Aloe First™ because it elevates the natural soothing and cleansing properties of aloe. Because Forever operates its own fields, we control every aspect of aloe vera production. That means every leaf is hand-filleted to ensure only the purest, highest quality aloe vera makes its way into Forever's Aloe First™. The combination of aloe and botanical extracts make this a wonderfully soothing mist for use on minor cuts, scrapes, burns and sunburn. The pH-balanced spray is easy to apply and gets to work fast! As an added benefit, Aloe First™ is also great for use on your hair. It provides a great barrier between your hair and the elements. Make sure you always have a bottle of this versatile spray around to experience the fast-acting soothing power of aloe vera when you need it!",
+    shortDescription: "Fast-acting, easy-to-use power",
+    image: "",
+    category: "Household",
+    categoryId: "household",
+    features: [
+      "Soothes minor skin irritations",
+      "Perfect addition to any first-aid kit",
+      "Good for hair",
+      "Soothes sunburn",
+      "Gluten Free",
+      "Suitable for vegetarians",
+      "IASC Certified"
+    ],
+    benefits: [
+      "Fast-acting skin soothing",
+      "Easy to apply spray format",
+      "Contains bee propolis and botanical extracts",
+      "pH-balanced formula",
+      "Great for hair protection"
+    ],
+    ingredients: "Aloe Vera Leaf Juice (Stabilized Aloe Vera Gel), Water, Allantoin, Glycerin, Tocopherol, Bee Propolis, Calendula Officinalis (Marigold) Flower Extract, Achillea Millefolium Extract, Thymus Vulgaris (Thyme) Flower/Leaf/Stem Extract, Chamomilla Recutita (Matricaria) Flower Extract, Taraxacum Officinale (Dandelion) Root Extract, Pinus Strobus (Eastern White Pine) Bark Extract, Zingiber Officinale (Ginger) Root Extract, Borago Officinalis Extract, Sentalum Album (Sandalwood) Extract, Polysorb 20, Sodium Citrate, Diazoldinyl Urea, Methylparaben",
+    usage: "Apply liberally to the skin as needed to soothe and moisturize. 16 FL. OZ. (1pt.) (473 mL)"
+  },
+  {
+    id: "6318",
+    name: "Forever Hand Sanitizer",
+    description: "Effective, gentle sanitization. Forever Hand Sanitizer is a powerful yet gentle solution for keeping your hands clean and fresh. Sanitized with 70% alcohol and infused with aloe's vegetable origin, it effectively kills 99.99% of germs, providing you with peace of mind wherever you go. This sanitizer is particularly essential in today's environment, ensuring that you can maintain hygiene without compromising on skin health. In addition to its germ-fighting properties, Forever Hand Sanitizer features a moisturizing formula enriched with glycerin and aloe leaf gel. These ingredients work together to keep your hands soft and hydrated even after repeated use. Unlike many alcohol-based sanitizers that can feel harsh or drying, this sanitizer is formulated with care to be gentle on your skin, making it suitable for daily use, even for those with sensitive skin. The quick-drying nature of this sanitizer makes it an ideal choice for fast-paced lifestyles. Whether you're at work, traveling, or running errands, Forever Hand Sanitizer works efficiently to deliver rapid sanitization, allowing you to return to your activities without the wait. Its compact and portable design means it can easily fit into your bag, purse, or pocket, making it convenient to carry wherever you need it. Lastly, the soothing aloe fresh fragrance adds a pleasant touch to your sanitization routine. With Forever Hand Sanitizer, you don't just get effective sanitization; you also experience a refreshing scent that leaves your hands feeling revitalized. Overall, this hand sanitizer is a practical, effective, and skin-friendly choice for maintaining hygiene in any situation.",
+    shortDescription: "Effective, gentle sanitization",
+    image: "",
+    category: "Household",
+    categoryId: "household",
+    features: [
+      "Kills 99.99% of germs effectively",
+      "Moisturizes with glycerin and aloe",
+      "Non-drying formula, gentle on skin",
+      "Quick-drying for on-the-go use",
+      "Portable, compact design for convenience"
+    ],
+    benefits: [
+      "Powerful germ protection",
+      "Keeps hands soft and hydrated",
+      "Suitable for sensitive skin",
+      "Fast-acting sanitization",
+      "Convenient portable design",
+      "Refreshing aloe fragrance"
+    ],
+    ingredients: "Each ml Contains: Extract of aloe vera (aloe barbadensis) (if) 0.50mg, processed in Prasanna base-q.s. Prasanna is extra neutral alcohol (content 70%w/w)",
+    usage: "FOR EXTERNAL USE ONLY. Apply on your palm, spread and rub over back of hands and finger tips. Let it dry. Do not touch any surface before it completely dry. 50mL"
   },
 ];
 
