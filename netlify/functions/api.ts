@@ -1,10 +1,11 @@
-import express, { type Request, Response, NextFunction } from "express";
+import express, { type Request, Response, NextFunction, Router } from "express";
 import serverless from "serverless-http";
 import { storage } from "../../server/storage";
 import { insertProductSchema, insertCategorySchema } from "../../shared/schema";
 import { seedDatabase } from "../../server/seed";
 
 const app = express();
+const router = Router();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -22,7 +23,7 @@ async function ensureSeeded() {
   }
 }
 
-app.get("/products", async (req, res) => {
+router.get("/products", async (req, res) => {
   try {
     await ensureSeeded();
     const products = await storage.getAllProducts();
@@ -32,7 +33,7 @@ app.get("/products", async (req, res) => {
   }
 });
 
-app.get("/products/:id", async (req, res) => {
+router.get("/products/:id", async (req, res) => {
   try {
     const product = await storage.getProductById(req.params.id);
     if (!product) {
@@ -44,7 +45,7 @@ app.get("/products/:id", async (req, res) => {
   }
 });
 
-app.get("/categories/:id/products", async (req, res) => {
+router.get("/categories/:id/products", async (req, res) => {
   try {
     const products = await storage.getProductsByCategory(req.params.id);
     res.json(products);
@@ -53,7 +54,7 @@ app.get("/categories/:id/products", async (req, res) => {
   }
 });
 
-app.post("/products", async (req, res) => {
+router.post("/products", async (req, res) => {
   try {
     const validatedData = insertProductSchema.parse(req.body);
     const product = await storage.createProduct(validatedData);
@@ -63,7 +64,7 @@ app.post("/products", async (req, res) => {
   }
 });
 
-app.get("/categories", async (req, res) => {
+router.get("/categories", async (req, res) => {
   try {
     await ensureSeeded();
     const categories = await storage.getAllCategories();
@@ -73,7 +74,7 @@ app.get("/categories", async (req, res) => {
   }
 });
 
-app.get("/categories/:id", async (req, res) => {
+router.get("/categories/:id", async (req, res) => {
   try {
     const category = await storage.getCategoryById(req.params.id);
     if (!category) {
@@ -85,7 +86,7 @@ app.get("/categories/:id", async (req, res) => {
   }
 });
 
-app.post("/categories", async (req, res) => {
+router.post("/categories", async (req, res) => {
   try {
     const validatedData = insertCategorySchema.parse(req.body);
     const category = await storage.createCategory(validatedData);
@@ -100,6 +101,8 @@ app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   const message = err.message || "Internal Server Error";
   res.status(status).json({ message });
 });
+
+app.use('/.netlify/functions/api', router);
 
 export const handler = async (event: any, context: any) => {
   context.callbackWaitsForEmptyEventLoop = false;
