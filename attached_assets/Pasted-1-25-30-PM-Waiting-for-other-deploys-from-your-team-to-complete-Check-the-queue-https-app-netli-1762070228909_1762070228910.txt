@@ -1,0 +1,137 @@
+1:25:30 PM: Waiting for other deploys from your team to complete. Check the queue: https://app.netlify.com/teams/abhi-coder-crypto/builds
+1:26:03 PM: build-image version: 2cae3ca905d202880257fd373e72986bf1b632fd (noble)
+1:26:03 PM: buildbot version: 0d1bfc5e5e409698057f2f06d53a52fa43dbfeba
+1:26:03 PM: Building without cache
+1:26:03 PM: Starting to prepare the repo for build
+1:26:04 PM: No cached dependencies found. Cloning fresh repo
+1:26:04 PM: git clone --filter=blob:none https://github.com/Abhi-coder-crypto/ProductCatalog
+1:26:04 PM: Preparing Git Reference refs/heads/main
+1:26:08 PM: Starting to install dependencies
+1:26:09 PM: Downloading and installing node v20.19.5...
+1:26:09 PM: Downloading https://nodejs.org/dist/v20.19.5/node-v20.19.5-linux-x64.tar.xz...
+1:26:09 PM: Computing checksum with sha256sum
+1:26:09 PM: Checksums matched!
+1:26:11 PM: Now using node v20.19.5 (npm v10.8.2)
+1:26:11 PM: Enabling Node.js Corepack
+1:26:11 PM: Started restoring cached build plugins
+1:26:11 PM: Finished restoring cached build plugins
+1:26:11 PM: Started restoring cached corepack dependencies
+1:26:11 PM: Finished restoring cached corepack dependencies
+1:26:11 PM: No npm workspaces detected
+1:26:11 PM: Started restoring cached node modules
+1:26:11 PM: Finished restoring cached node modules
+1:26:11 PM: Installing npm packages using npm version 10.8.2
+1:26:14 PM: npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+1:26:14 PM: npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+1:26:16 PM: added 496 packages in 5s
+1:26:16 PM: npm packages installed
+1:26:17 PM: Successfully installed dependencies
+1:26:17 PM: Starting build script
+1:26:17 PM: Detected 1 framework(s)
+1:26:17 PM: "vite" at version "5.4.20"
+1:26:17 PM: Section completed: initializing
+1:26:19 PM: ​
+1:26:19 PM: Netlify Build                                                 
+1:26:19 PM: ────────────────────────────────────────────────────────────────
+1:26:19 PM: ​
+1:26:19 PM: ❯ Version
+1:26:19 PM:   @netlify/build 35.2.11
+1:26:19 PM: ​
+1:26:19 PM: ❯ Flags
+1:26:19 PM:   accountId: 68a2c44ce7dca5253d61f968
+1:26:19 PM:   baseRelDir: true
+1:26:19 PM:   buildId: 69070e72d178da4633d97bed
+1:26:19 PM:   deployId: 69070e72d178da4633d97bef
+1:26:19 PM: ​
+1:26:19 PM: ❯ Current directory
+1:26:19 PM:   /opt/build/repo
+1:26:19 PM: ​
+1:26:19 PM: ❯ Config file
+1:26:19 PM:   /opt/build/repo/netlify.toml
+1:26:19 PM: ​
+1:26:19 PM: ❯ Context
+1:26:19 PM:   production
+1:26:19 PM: ​
+1:26:19 PM: ❯ Installing extensions
+1:26:19 PM:    - neon
+1:26:35 PM: Starting post processing
+1:26:35 PM: Skipping form detection
+1:26:35 PM: Post processing - header rules
+1:26:35 PM: Post processing - redirect rules
+1:26:35 PM: Post processing done
+1:26:35 PM: Section completed: postprocessing
+1:26:36 PM: Site is live ✨
+1:26:30 PM: ​
+1:26:30 PM: ❯ Loading extensions
+1:26:30 PM:    - neon
+1:26:31 PM: ​
+1:26:31 PM: build.command from netlify.toml                               
+1:26:31 PM: ────────────────────────────────────────────────────────────────
+1:26:31 PM: ​
+1:26:31 PM: $ npm run build
+1:26:31 PM: > rest-express@1.0.0 build
+1:26:31 PM: > vite build
+1:26:31 PM: vite v5.4.20 building for production...
+1:26:31 PM: transforming...
+1:26:34 PM: A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 1678 modules transformed.
+1:26:34 PM: rendering chunks...
+1:26:34 PM: computing gzip size...
+1:26:34 PM: ../dist/public/index.html                   1.00 kB │ gzip:  0.53 kB
+1:26:34 PM: ../dist/public/assets/index-CQAKEhOv.css   89.27 kB │ gzip: 14.24 kB
+1:26:34 PM: ../dist/public/assets/index-Dk6hvrMO.js   301.64 kB │ gzip: 96.31 kB
+1:26:34 PM: ✓ built in 2.78s
+1:26:34 PM: ​
+1:26:34 PM: (build.command completed in 3s)
+1:26:34 PM: ​
+1:26:34 PM: Functions bundling                                            
+1:26:34 PM: ────────────────────────────────────────────────────────────────
+1:26:34 PM: ​
+1:26:34 PM: Packaging Functions from netlify/functions directory:
+1:26:34 PM:  - api.ts
+1:26:34 PM:  - seed-database.ts
+1:26:34 PM: ​
+1:26:35 PM: ​
+1:26:35 PM: (Functions bundling completed in 752ms)
+1:26:35 PM: ​
+1:26:35 PM: Deploy site                                                   
+1:26:35 PM: ────────────────────────────────────────────────────────────────
+1:26:35 PM: ​
+1:26:35 PM: Starting to deploy site from 'dist/public'
+1:26:35 PM: Calculating files to upload
+1:26:35 PM: 0 new file(s) to upload
+1:26:35 PM: 0 new function(s) to upload
+1:26:35 PM: Section completed: deploying
+1:26:35 PM: Site deploy was successfully initiated
+1:26:35 PM: ​
+1:26:35 PM: (Deploy site completed in 301ms)
+1:26:36 PM: ​
+1:26:36 PM: Netlify Build Complete                                        
+1:26:36 PM: ────────────────────────────────────────────────────────────────
+1:26:36 PM: ​
+1:26:36 PM: (Netlify Build completed in 16.9s)
+1:26:36 PM: Caching artifacts
+1:26:36 PM: Started saving node modules
+1:26:36 PM: Finished saving node modules
+1:26:36 PM: Started saving build plugins
+1:26:36 PM: Finished saving build plugins
+1:26:36 PM: Started saving bun cache
+1:26:36 PM: Finished saving bun cache
+1:26:36 PM: Started saving go cache
+1:26:38 PM: Finished saving go cache
+1:26:38 PM: Started saving python cache
+1:26:38 PM: Finished saving python cache
+1:26:38 PM: Started saving ruby cache
+1:26:41 PM: Finished saving ruby cache
+1:26:41 PM: Started saving corepack cache
+1:26:41 PM: Finished saving corepack cache
+1:26:41 PM: Started saving emacs cask dependencies
+1:26:41 PM: Finished saving emacs cask dependencies
+1:26:41 PM: Started saving maven dependencies
+1:26:41 PM: Finished saving maven dependencies
+1:26:41 PM: Started saving boot dependencies
+1:26:41 PM: Finished saving boot dependencies
+1:26:41 PM: Started saving rust rustup cache
+1:26:41 PM: Finished saving rust rustup cache
+1:26:41 PM: Build script success
+1:26:41 PM: Section completed: building
