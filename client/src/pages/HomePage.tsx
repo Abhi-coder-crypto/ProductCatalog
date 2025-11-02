@@ -140,8 +140,11 @@ export default function HomePage() {
             </div>
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
-              <p className="text-sm text-muted-foreground">
-                For more information about our products, please contact your local Forever Living distributor.
+              <p className="text-sm text-muted-foreground mb-3">
+                Contact this person for buying these products:
+              </p>
+              <p className="text-sm font-semibold text-primary">
+                Pradnya Raute - 9930953307
               </p>
             </div>
           </div>
