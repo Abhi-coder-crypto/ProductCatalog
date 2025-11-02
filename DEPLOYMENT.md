@@ -51,6 +51,17 @@ This guide will walk you through deploying your Forever Living Products applicat
 
 7. Click "Deploy site"
 
+### How the Routing Works
+
+The application uses Netlify's redirect feature to route API calls to serverless functions:
+
+1. Frontend makes request: `/api/products`
+2. Netlify redirect rule intercepts and forwards to: `/.netlify/functions/api/products`
+3. Serverless function handles the request at path: `/products`
+4. Response is returned to the frontend
+
+This configuration is defined in `netlify.toml` and the routes in `netlify/functions/api.ts` are designed to work with this flow.
+
 ## Step 4: Seed the Database
 
 After the first deployment, you need to seed your database with categories and products:

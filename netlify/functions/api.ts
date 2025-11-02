@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/api/products", async (req, res) => {
+app.get("/products", async (req, res) => {
   try {
     const products = await storage.getAllProducts();
     res.json(products);
@@ -17,7 +17,7 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
-app.get("/api/products/:id", async (req, res) => {
+app.get("/products/:id", async (req, res) => {
   try {
     const product = await storage.getProductById(req.params.id);
     if (!product) {
@@ -29,7 +29,7 @@ app.get("/api/products/:id", async (req, res) => {
   }
 });
 
-app.get("/api/categories/:id/products", async (req, res) => {
+app.get("/categories/:id/products", async (req, res) => {
   try {
     const products = await storage.getProductsByCategory(req.params.id);
     res.json(products);
@@ -38,7 +38,7 @@ app.get("/api/categories/:id/products", async (req, res) => {
   }
 });
 
-app.post("/api/products", async (req, res) => {
+app.post("/products", async (req, res) => {
   try {
     const validatedData = insertProductSchema.parse(req.body);
     const product = await storage.createProduct(validatedData);
@@ -48,7 +48,7 @@ app.post("/api/products", async (req, res) => {
   }
 });
 
-app.get("/api/categories", async (req, res) => {
+app.get("/categories", async (req, res) => {
   try {
     const categories = await storage.getAllCategories();
     res.json(categories);
@@ -57,7 +57,7 @@ app.get("/api/categories", async (req, res) => {
   }
 });
 
-app.get("/api/categories/:id", async (req, res) => {
+app.get("/categories/:id", async (req, res) => {
   try {
     const category = await storage.getCategoryById(req.params.id);
     if (!category) {
@@ -69,7 +69,7 @@ app.get("/api/categories/:id", async (req, res) => {
   }
 });
 
-app.post("/api/categories", async (req, res) => {
+app.post("/categories", async (req, res) => {
   try {
     const validatedData = insertCategorySchema.parse(req.body);
     const category = await storage.createCategory(validatedData);
