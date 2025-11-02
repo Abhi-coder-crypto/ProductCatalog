@@ -49,7 +49,7 @@ app.use((req, res, next) => {
 
 (async () => {
   seedDatabase().catch((error) => {
-    console.error("Error during database seeding:", error);
+    console.error("Error checking/seeding database:", error);
   });
   
   const server = await registerRoutes(app);

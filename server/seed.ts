@@ -1976,10 +1976,18 @@ const PRODUCTS = [
 
 export async function seedDatabase() {
   try {
-    console.log("Seeding database...");
-    await storage.getAllCategories();
+    console.log("Checking if database needs seeding...");
+    
+    const existingCategories = await storage.getAllCategories();
+    const existingProducts = await storage.getAllProducts();
+    
+    if (existingCategories.length > 0 && existingProducts.length > 0) {
+      console.log(`Database already has data: ${existingCategories.length} categories, ${existingProducts.length} products`);
+      console.log("Skipping seed - using existing data from MongoDB");
+      return;
+    }
 
-    console.log("Seeding categories...");
+    console.log("Database is empty. Seeding categories...");
     for (const category of CATEGORIES) {
       try {
         const existing = await storage.getCategoryById(category.id);
