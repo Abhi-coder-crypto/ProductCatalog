@@ -5,8 +5,10 @@ import { ChevronRight, Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 import { useQuery } from "@tanstack/react-query";
 import type { ProductType } from "@shared/schema";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ProductDetailPage() {
   const [, params] = useRoute("/product/:id");
@@ -105,9 +107,22 @@ export default function ProductDetailPage() {
             <h1 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-4" data-testid="text-product-name">
               {product.name}
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground mb-8" data-testid="text-short-description">
+            <p className="text-base md:text-lg text-muted-foreground mb-6" data-testid="text-short-description">
               {product.shortDescription}
             </p>
+
+            <Button
+              onClick={() => {
+                const message = `I am interested in ${product.name}`;
+                const encodedMessage = encodeURIComponent(message);
+                window.open(`https://wa.me/919930953307?text=${encodedMessage}`, '_blank');
+              }}
+              className="w-full mb-8 bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold py-6 text-lg shadow-lg hover-elevate active-elevate-2"
+              data-testid="button-enquire-now"
+            >
+              <FaWhatsapp className="w-6 h-6 mr-2" />
+              Enquire Now
+            </Button>
 
             <Tabs defaultValue="description" className="w-full">
               <TabsList className="grid w-full grid-cols-3 bg-amber-50 border border-amber-200" data-testid="tabs-product-info">

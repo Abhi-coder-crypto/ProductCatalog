@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { CategoryType } from "@shared/schema";
+import { FaWhatsapp } from "react-icons/fa";
 
 interface HeaderProps {
   onSearch?: (query: string) => void;
@@ -38,15 +39,22 @@ export default function Header({ onSearch, initialSearchQuery = "", onSubmitSear
       <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between gap-4 h-16 md:h-20">
-            <Link href="/" data-testid="link-home">
-              <div className="flex items-center cursor-pointer">
-                <img 
-                  src="/images/forever-logo.png" 
-                  alt="Forever Living" 
-                  className="h-12 md:h-16 w-auto object-contain"
-                />
-              </div>
-            </Link>
+            <div className="flex items-center gap-2">
+              <Link href="/" data-testid="link-home">
+                <h1 className="font-heading font-bold text-lg md:text-xl text-primary cursor-pointer">
+                  PRADNYA RAUTE
+                </h1>
+              </Link>
+              <a
+                href="https://wa.me/919930953307"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-elevate active-elevate-2 p-1.5 rounded-full transition-all"
+                data-testid="link-whatsapp"
+              >
+                <FaWhatsapp className="w-6 h-6 md:w-7 md:h-7 text-[#25D366]" />
+              </a>
+            </div>
 
             <div className="flex items-center gap-2">
               <button 
